@@ -1,0 +1,1028 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Karla', sans-serif;
+}
+body{
+    font-size: 16px;
+}
+h1{font-size: 4em;color: #000000;}
+h2{font-size: 2em;color: #262626;margin: 0 0 1em 0;}
+h3{font-size: 1.3em;color: #262626;}
+p{font-size: 1.2em;}
+.linha{
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+.tl{text-align: left}
+.tr{text-align: right}
+.wrap{
+    /* flex-wrap:wrap;  */
+}
+/* CONFIGURAÇÕES GERAIS */
+
+.banner{
+    background-image: url("banner.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 385px;
+    display: flex;
+    margin: 0 0 0.5em 0;
+}
+.escuro{
+    width: 100%;
+    height: 385px;
+    display: flex;
+}
+/* IMAGEM DE PERFIL */
+.sobre-mim img{
+    width: 15%;
+    height: 15%;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #00ffec;
+    border-radius: 100%;
+}
+.escuro::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 385px;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.banner h1{
+    z-index: 2;
+    color: #e5e5e5;
+}
+.banner-item{
+     color: #e5e5e5;
+     margin: auto;
+     z-index: 2;
+}
+/* FIM BANNER */
+
+.sobre-mim{
+    text-align: center;
+}
+main{
+    width: 70%;
+    height: auto;
+    margin: auto;
+    color: #4c4c4c;
+}
+.boxs{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    padding: 2em 3em 3em 3em;
+    box-shadow: 0 0.6em 0.6em 0.6em rgb(0, 0, 0, 0.5);
+    margin: 0 0 6em 0;
+}
+h2{
+    text-align: center;
+    text-transform: uppercase;
+}
+.sm-item{
+    flex-direction: inherit;
+    margin: auto;
+}
+.espaço{
+    text-align: center;
+    margin-top: 1em;
+}
+
+/* FIM SOBRE MIM */
+.habilidades{
+    align-content: center;
+}
+.h-item{
+    font-size: 1.2em;
+    text-transform: uppercase;
+    margin: 0 1em 0.5em 0;
+    min-width: 40%;
+}
+.coluna{
+    display: flex;
+    flex-direction: inherit;
+}
+.bola{
+    display: flex;
+    flex-direction: inherit;
+}
+.b{
+    width: 1.0em;
+    height: 1.0em;
+    border-radius: 100%;
+    background-color: #00ffec;
+    margin: 0.2em;
+}
+.bb{
+    width: 1.0em;
+    height: 1.0em;
+    border-radius: 100%;
+    background-color: white;
+    margin: 0.2em;
+    border: solid #00ffec;
+}
+.skill{
+    display: flex;
+    flex-direction: inherit;
+    margin: auto;
+    text-align: right;
+}
+/*FIM HABILIDADES*/
+.losangulo{
+    background-color:  #00ffec;
+    width: 8em;
+    height: 8em;
+    background-size: cover;
+    padding: 1.1em 0 0 0;
+    margin: auto;
+    transform: rotateZ(45deg);
+}
+.es{
+    padding: 1.5em 0 0 0;
+}
+.os{
+    padding: 2.5em 0 0 0;
+}
+.ep-item-text{
+    text-align: center;
+    margin: auto;
+    width: 45%;
+    z-index: 2;
+}
+.ep-item-caixa{
+    width: 30%;
+    height: 6em;
+    background-color: #00ffec;
+    margin: auto;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    text-align: center;
+    z-index: 2;
+}
+.tt{
+    margin: 1em 0 1em 0;
+}
+.flex{
+    display: flex;
+    flex-direction: inherit;
+    /* flex-wrap: wrap; */
+}
+.margin-esquerda{
+    padding: 0 16.5% 0 16.5%;
+    margin: 1em 0 0 0;
+}
+.fp-item{
+    text-align: center;
+    /* padding: 1.2em; */
+    transform: rotateZ(-45deg);
+}
+/* FIM EXPERIENCIAS PROFISSIONAIS */
+
+.link{
+    display: flex;
+    flex-direction: inherit;
+}
+.p-links{
+    text-align: center;
+    margin: auto;
+    width: 48%;
+    margin: 1em 0 1em 0;
+}
+.pf{
+    display: flex;
+    flex-direction: inherit;
+}
+.p-projetos{
+    width: 22%;
+    height: 15em;
+    margin: auto;
+    /* border: solid black 0.1em; */
+    margin-top: 2em;
+    text-align: center;
+}
+.p-projetos img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+@media screen and (max-width:1180px){
+    .linha{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: inherit;
+    }
+    .sm-item{
+        min-width: 30%;
+    }
+    .mtr{
+        text-align: right;
+    }
+    .mtl{
+        text-align: left;
+    }
+
+    .mmtr{
+        text-align: right;
+    }
+    .mmtl{
+        text-align: left;
+    }
+    .mmtc{
+        text-align: center;
+        margin: auto;
+    }
+    .p-links{
+        margin: auto;
+        text-align: center;
+    }
+    .m05{
+        margin-top: 0.5em;
+    }
+}
+
+@media screen and (max-width:920px){
+    h1{font-size: 3em;}
+    h2{font-size: 2em;}
+    h3{font-size: 1.1em;}
+    p{font-size: 1em;}
+    .banner{
+        width: 100%;
+        height: 300px;
+    }
+    .escuro{
+        width: 100%;
+        height: 100%;
+    }
+    .escuro::before {
+        width: 100%;
+        height: 300px;
+    }
+
+    .boxs{
+        padding: 4% 6% 6% 6%;
+        margin: 0em 0em 2em 0em;
+    }
+
+    .sobre-mim img{
+        width: 20%;
+        height: 20%;
+    }
+    .linha{
+        flex-wrap: wrap;
+        display: flex;
+    }
+    .sm-item{
+        margin: 0 0 0.5em 0;
+        text-align: left;
+        min-width: 30%;
+    }
+    .mtr{
+        text-align: right;
+    }
+    .mtl{
+        text-align: left;
+    }
+
+    .mmtr{
+        text-align: right;
+    }
+    .mmtl{
+        text-align: left;
+    }
+    .mmtc{
+        text-align: center;
+        margin: auto;
+    }
+
+    .h-item{
+        font-size: 1em;
+        min-width: 27%;
+    }
+
+    .skill{
+        /* margin-right: 0; */
+        display: flex;
+        flex-wrap: wrap;
+        /* padding: 0 0em 0 1em; */
+        justify-content: center;
+    }
+    .b{
+        width: 1em;
+        height: 1em;
+        margin-bottom: 0.7em;
+    }
+    .bb{
+        width: 1em;
+        height: 1em;
+        border: solid 0.1em #00ffec;
+    }
+
+    .formação-profissional{
+        padding: 4% 6% 10% 6%;
+    }
+    .losangulo{
+        width: 7em;
+        height: 7em;
+        padding: 0.5em 0em 0em 0em;
+        margin: 0 auto 0 auto;
+    }
+    /* .mll{margin-left: 60%}
+    .mlr{margin-right: 60%} */
+
+    .fp-item{
+        font-size: 1em;
+
+    }
+    .es{
+        padding: 1.1em 0 0 0;
+    }
+    .os{
+        padding: 2.2em 0em 0 0;
+    }
+    .flex{
+        flex-direction: inherit;
+        text-align: center;
+        margin: auto;
+    }
+    .margin-esquerda{
+        /* padding: 0 0 0 0;
+        margin: 0 0 0 0; */
+        min-width: 50%;
+    }
+    .margin-center{
+        margin: ;
+    }
+
+    .coluna{
+        display: flex;
+        flex-direction: inherit;
+    }
+    .ep-item-text{
+        width: 90%;
+    }
+    .ep-item-caixa{
+        width: 40%;
+        font-size: 0.9em;
+    }
+
+    .portfolio h2{
+        margin: 0 0 1em 0;
+    }
+    .p-links{
+        text-align: center;
+    }
+    .pf{
+        margin: 0;
+        padding: 0;
+        flex-direction: inherit;
+    }
+    .p-projetos{
+        width: 40%;
+    }
+    .m0{
+        
+    }
+    .m1r{
+        margin-top: 1em;
+    }
+    .m1{
+        margin-top: 0em;
+    }
+    
+    .m05{
+        margin-top: 0.5em;
+    }
+}
+@media screen and (max-width:720px){
+    .linha{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: inherit;
+    }
+    .sm-item{
+        min-width: 50%;
+        margin-top: 0.3em;
+    }
+    .mtr{
+        text-align: right;
+    }
+    .mtl{
+        text-align: left;
+    }
+
+    .mmtr{
+        text-align: left;
+    }
+    .mmtl{
+        text-align: left;
+    }
+    .mmtc{
+        text-align: right;
+        margin: auto;
+    }
+    .p-links{
+        margin: auto;
+        text-align: center;
+    }
+    .m05{
+        margin-top: 0;
+    }
+    .formação-profissional{
+        padding: 3% 5% 10% 5%;
+    }
+    .losangulo{
+        width: 6.5em;
+        height: 6.5em;
+        padding: 0.5em 0em 0em 0em;
+        margin: 0 auto 0 auto;
+    }
+    .fp-item{
+        font-size: 0.9em;
+
+    }
+    .es{
+        padding: 0.9em 0 0 0;
+    }
+    .os{
+        padding: 1.9em 0em 0 0;
+    }
+    .flex{
+        flex-direction: inherit;
+        text-align: center;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:620px){ 
+    h1{font-size: 2.5em;}
+    h2{font-size: 1.5em;}
+    h3{font-size: 1em;}
+    p{font-size: 0.9em;}
+    .banner{
+        width: 100%;
+        height: 200px;
+    }
+    .escuro{
+        width: 100%;
+        height: 100%;
+    }
+    .escuro::before {
+        width: 100%;
+        height: 200px;
+    }
+
+    .boxs{
+        padding: 3% 5% 5% 5%;
+        margin: 0em 0em 2em 0em;
+    }
+
+    .sobre-mim img{
+        width: 20%;
+        height: 20%;
+    }
+    .linha{
+        flex-wrap: wrap;
+        display: flex;
+    }
+    .sm-item{
+        margin: 0 0 0.5em 0;
+        text-align: left;
+        min-width: 50%;
+        margin: auto;
+    }
+    .mtr{
+        text-align: right;
+    }
+    .mtl{
+        text-align: left;
+    }
+    /* .talg{
+        text-align: right;
+    } */
+    .h-item{
+        font-size: 0.9em;
+    }
+
+    .skill{
+        text-align: right;
+        margin-right: 0;
+        display: flex;
+        flex-wrap: wrap;
+        /* padding: 0 0em 0 1em; */
+        justify-content: center;
+    }
+    .b{
+        width: 0.9em;
+        height: 0.9em;
+        margin-bottom: 0.5em;
+    }
+    .bb{
+        width: 0.9em;
+        height: 0.9em;
+        border: solid 0.1em #00ffec;
+    }
+
+    .formação-profissional{
+        padding: 3% 5% 10% 5%;
+    }
+    .losangulo{
+        width: 6.5em;
+        height: 6.5em;
+        padding: 0.5em 0em 0em 0em;
+        margin: 0 auto 0 auto;
+    }
+    .mll{margin-left: 60%}
+    .mlr{margin-right: 60%}
+
+    .fp-item{
+        font-size: 0.9em;
+
+    }
+    .es{
+        padding: 0.9em 0 0 0;
+    }
+    .os{
+        padding: 1.9em 0em 0 0;
+    }
+    .flex{
+        flex-direction: column;
+        text-align: center;
+        margin: auto;
+    }
+    .margin-esquerda{
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
+        margin: auto;
+    }
+    .margin-center{
+        margin: ;
+    }
+
+    .coluna{
+        display: flex;
+        flex-direction: column;
+    }
+    .ep-item-text{
+        width: 90%;
+    }
+    .ep-item-caixa{
+        width: 90%;
+        font-size: 0.9em;
+    }
+
+    .portfolio h2{
+        margin: 0 0 1em 0;
+    }
+    .p-links{
+        text-align: center;
+    }
+    .pf{
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+    }
+    .p-projetos{
+        width: 80%;
+    }
+    .m0{
+        margin-top: 0.5;
+    }
+    .m1{
+        margin-top: 1em;
+    }
+    /* .m05{
+        margin-top: 0.5em;
+    } */
+}
+@media screen and (max-width:510px){
+    h1{font-size: 2.2em;}
+    h2{font-size: 1.1em;}
+    h3{font-size: 0.8em;}
+    p{font-size: 0.6em;}
+    .banner{
+        width: 100%;
+        height: 180px;
+    }
+    .escuro{
+        width: 100%;
+        height: 100%;
+    }
+    .escuro::before {
+        width: 100%;
+        height: 180px;
+    }
+
+    .boxs{
+        padding: 4% 5% 5% 5%;
+        margin: 0em 0em 2em 0em;
+    }
+
+    .sobre-mim img{
+        width: 20%;
+        height: 20%;
+    }
+    .linha{
+        flex-wrap: wrap;
+        display: flex;
+    }
+    .sm-item{
+        margin: 0 0 0.5em 0;
+        text-align: left;
+        /* min-width: 50%; */
+        margin: auto;
+    }
+    .mtr{
+        text-align: right;
+    }
+    .mtl{
+        text-align: left;
+    }
+    /* .talg{
+        text-align: right;
+    } */
+    .h-item{
+        font-size: 0.7em;
+    }
+
+    .skill{
+        text-align: right;
+        margin-right: 0;
+        display: flex;
+        flex-wrap: wrap;
+        /* padding: 0 0em 0 1em; */
+        justify-content: center;
+    }
+    .b{
+        width: 0.6em;
+        height: 0.6em;
+        margin-bottom: 0.5em;
+    }
+    .bb{
+        width: 0.7em;
+        height: 0.7em;
+        border: solid 0.1em #00ffec;
+    }
+
+    .formação-profissional{
+        padding: 4% 5% 10% 5%;
+    }
+    .losangulo{
+        width: 6.5em;
+        height: 6.5em;
+        padding: 0.5em 0em 0em 0em;
+        margin: 0 auto 0 auto;
+    }
+    .mll{margin-left: 60%}
+    .mlr{margin-right: 60%}
+
+    .fp-item{
+        font-size: 0.9em;
+
+    }
+    .es{
+        padding: 0.9em 0 0 0;
+    }
+    .os{
+        padding: 1.9em 0em 0 0;
+    }
+    .flex{
+        flex-direction: column;
+        text-align: center;
+        margin: auto;
+    }
+    .margin-esquerda{
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
+        margin: auto;
+    }
+    .margin-center{
+        margin: ;
+    }
+
+    .coluna{
+        display: flex;
+        flex-direction: column;
+    }
+    .ep-item-text{
+        width: 90%;
+    }
+    .ep-item-caixa{
+        width: 90%;
+        font-size: 0.9em;
+    }
+
+    .portfolio h2{
+        margin: 0 0 1em 0;
+    }
+    .p-links{
+        text-align: center;
+    }
+    .pf{
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+    }
+    .p-projetos{
+        width: 80%;
+    }
+    .m0{
+        margin-top: 0.5;
+    }
+    .m1{
+        margin-top: 1em;
+    }
+    /* .m05{
+        margin-top: 0.5em;
+    } */
+}
+@media screen and (max-width:420px){
+    h1{font-size: 2em;}
+    h2{font-size: 1em;}
+    h3{font-size: 0.6em;}
+    p{font-size: 0.5em;}
+    .banner{
+        width: 100%;
+        height: 120px;
+    }
+    .escuro{
+        width: 100%;
+        height: 100%;
+    }
+    .escuro::before {
+        width: 100%;
+        height: 120px;
+    }
+
+    .boxs{
+        padding: 3% 5% 5% 5%;
+        margin: 0em 0em 2em 0em;
+    }
+
+    .sobre-mim img{
+        width: 30%;
+        height: 30%;
+    }
+    .linha{
+        flex-wrap: wrap;
+        display: flex;
+    }
+    .sm-item{
+        margin: 0 0 0.5em 0;
+        text-align: left;
+        min-width: 50%;
+    }
+    .mtr{
+        text-align: right;
+    }
+    .mtl{
+        text-align: center;
+    }
+    .h-item{
+        font-size: 0.5em;
+        /*min-width: 100px;*/
+        /*margin: auto;*/
+    }
+
+    .skill{
+        text-align: left;
+        margin-right: 0;
+        display: flex;
+        flex-wrap: wrap;
+        /* padding: 0 0em 0 0em; */
+        justify-content: center;
+    }
+    .b{
+        width: 0.5em;
+        height: 0.5em;
+        margin-bottom: 0.5em;
+    }
+    .bb{
+        width: 0.5em;
+        height: 0.5em;
+        border: solid 0.1em #00ffec;
+    }
+
+    .formação-profissional{
+        padding: 3% 5% 10% 5%;
+    }
+    .losangulo{
+        width: 5em;
+        height: 5em;
+        padding: 0.7em 0em 0em 0em;
+        margin: 0 auto 0 auto;
+    }
+    .mll{margin-left: 60%}
+    .mlr{margin-right: 60%}
+
+    .fp-item{
+        font-size: 0.6em;
+
+    }
+    .es{
+        padding: 0.9em 0 0 0;
+    }
+    .os{
+        padding: 1.5em 0 0 0;
+    }
+    .flex{
+        flex-direction: column;
+        text-align: center;
+        margin: auto;
+    }
+    .margin-esquerda{
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
+        margin: auto;
+    }
+    .margin-center{
+        margin: ;
+    }
+
+    .coluna{
+        display: flex;
+        flex-direction: column;
+    }
+    .ep-item-text{
+        width: 100%;
+    }
+    .ep-item-caixa{
+        width: 100%;
+        font-size: 0.6em;
+    }
+
+    .portfolio h2{
+        margin: 0 0 1em 0;
+    }
+    .link{
+        text-align: center;
+    }
+    .pf{
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+    }
+    .p-projetos{
+        /*margin-top: 0;*/
+        width: 80%;
+    }
+    .m0{
+        margin-top: 0.5;
+    }
+    .m1{
+        margin-top: 1em;
+    }
+    .m05{
+        margin-top: 0.5em;
+    }
+}
+@media screen and (max-width:350px){
+    h1{font-size: 1.9em;}
+    h2{font-size: 0.9em;}
+    h3{font-size: 0.5em;}
+    p{font-size: 0.4em;}
+    .banner{
+        width: 100%;
+        height: 100px;
+    }
+    .escuro{
+        width: 100%;
+        height: 100%;
+    }
+    .escuro::before {
+        width: 100%;
+        height: 100px;
+    }
+
+    .boxs{
+        padding: 3% 5% 5% 5%;
+        margin: 0em 0em 2em 0em;
+    }
+
+    .sobre-mim img{
+        width: 30%;
+        height: 30%;
+    }
+    .linha{
+        flex-wrap: wrap;
+        display: flex;
+    }
+    .sm-item{
+        margin: 0 0 0.5em 0;
+        text-align: left;
+        min-width: 50%;
+    }
+    .mtr{
+        text-align: right;
+    }
+    .mtl{
+        text-align: center;
+        
+    }
+    .h-item{
+        font-size: 0.4em;
+        /*min-width: 100px;*/
+        /*margin: auto;*/
+    }
+
+    .skill{
+        text-align: left;
+        margin-right: 0;
+        display: flex;
+        flex-wrap: wrap;
+        /* padding: 0 0em 0 0em; */
+        justify-content: center;
+    }
+    .b{
+        width: 0.4em;
+        height: 0.4em;
+        margin-bottom: 0.1em;
+    }
+    .bb{
+        width: 0.4em;
+        height: 0.4em;
+        border: solid 0.1em #00ffec;
+    }
+
+    .formação-profissional{
+        padding: 3% 5% 10% 5%;
+    }
+    .losangulo{
+        width: 3.5em;
+        height: 3.5em;
+        padding: 0.5em 0em 0em 0em;
+        margin: 0 auto 0 auto;
+    }
+    .mll{margin-left: 60%}
+    .mlr{margin-right: 60%}
+
+    .fp-item{
+        font-size: 0.4em;
+
+    }
+    .es{
+        padding: 0.7em 0 0 0;
+    }
+    .os{
+        padding: 1.2em 0 0 0;
+    }
+    .flex{
+        flex-direction: column;
+        text-align: center;
+        margin: auto;
+    }
+    .margin-esquerda{
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
+        margin: auto;
+    }
+    .margin-center{
+        margin: ;
+    }
+
+    .coluna{
+        display: flex;
+        flex-direction: column;
+    }
+    .ep-item-text{
+        width: 100%;
+    }
+    .ep-item-caixa{
+        width: 100%;
+        font-size: 0.6em;
+    }
+
+    .portfolio h2{
+        margin: 0 0 1em 0;
+    }
+    .p-links{
+        text-align: center;
+    }
+    .pf{
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+    }
+    .p-projetos{
+        /*margin-top: 0;*/
+        width: 80%;
+    }
+    .m0{
+        margin-top: 0.5;
+    }
+    .m1{
+        margin-top: 1em;
+    }
+    .m05{
+        margin-top: 0.5em;
+    }
+}
+
+
+
+       
