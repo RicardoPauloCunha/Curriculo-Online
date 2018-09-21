@@ -808,7 +808,7 @@ h2{
     }
 
     .skill{
-        text-align: left;
+        /* text-align: left; */
         margin-right: 0;
         display: flex;
         flex-wrap: wrap;
