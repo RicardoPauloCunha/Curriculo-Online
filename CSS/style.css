@@ -6,6 +6,7 @@
 }
 body{
     font-size: 16px;
+    background-color: #ccc;
 }
 h1{font-size: 4em;color: #000000;}
 h2{font-size: 2em;color: #262626;margin: 0 0 1em 0;}
@@ -13,18 +14,13 @@ h3{font-size: 1.3em;color: #262626;}
 p{font-size: 1.2em;}
 .linha{
     display: flex;
-    /* flex-wrap: wrap; */
 }
 .tl{text-align: left}
 .tr{text-align: right}
-.wrap{
-    /* flex-wrap:wrap;  */
-}
 h1:hover{
     font-size: 5em;
 }
 /* CONFIGURAÇÕES GERAIS */
-
 .banner{
     background-image: url("banner.jpg");
     background-size: cover;
@@ -67,7 +63,6 @@ h1:hover{
      z-index: 2;
 }
 /* FIM BANNER */
-
 .sobre-mim{
     text-align: center;
 }
@@ -101,7 +96,6 @@ h2{
     text-align: center;
     margin-top: 1em;
 }
-
 /* FIM SOBRE MIM */
 .habilidades{
     align-content: center;
@@ -186,7 +180,6 @@ h2{
 .flex{
     display: flex;
     flex-direction: inherit;
-    /* flex-wrap: wrap; */
 }
 .margin-esquerda{
     padding: 0 16.5% 0 16.5%;
@@ -194,7 +187,6 @@ h2{
 }
 .fp-item{
     text-align: center;
-    /* padding: 1.2em; */
     transform: rotateZ(-45deg);
 }
 /* FIM EXPERIENCIAS PROFISSIONAIS */
@@ -217,7 +209,6 @@ h2{
     width: 22%;
     height: 15em;
     margin: auto;
-    /* border: solid black 0.1em; */
     margin-top: 2em;
     text-align: center;
     transition: 0.3s;
@@ -230,7 +221,6 @@ h2{
     max-width: 100%;
     max-height: 100%;
 }
-
 @media screen and (max-width:1180px){
     .linha{
         display: flex;
