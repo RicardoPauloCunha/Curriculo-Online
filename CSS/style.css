@@ -94,6 +94,7 @@ main{
     margin: 0 0 6em 0;
     transition: 0.3s;
 }
+
 .boxs:hover{
     box-shadow: 0 1em 1em 1em rgb(0, 0, 0, 0.5);
 }
