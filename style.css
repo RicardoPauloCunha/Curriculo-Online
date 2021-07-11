@@ -1,0 +1,258 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Karla', sans-serif;
+}
+
+body {
+    font-size: 16px;
+    background-color: #f3f3f3;
+}
+
+h1 {
+    font-size: 4em;
+    color: #000000;
+}
+
+h2 {
+    font-size: 2em;
+    color: #2e2e2e;
+    margin: 0 0 0.5em 0;
+}
+
+h3 {
+    font-size: 1.3em;
+    color: #2e2e2e;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+header {
+    background-image: url("./img/banner.png");
+    background-size: cover;
+    width: 100%;
+    height: 385px;
+    color: #e5e5e5;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    color: #e5e5e5;
+}
+
+.banner-item {
+    margin: auto;
+}
+
+.boxs {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    background-color: white;
+    padding: 3rem 2rem;
+    box-shadow: 0px 1px 5px 0px rgb(74 74 74 / 50%);
+    text-align: center;
+    border-radius: 0.5rem;
+}
+
+.sobre-mim {
+    position: relative;
+    bottom: 2rem;
+    margin-bottom: 1rem;
+}
+
+.sobre-mim div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.sobre-mim div>div {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.sobre-mim>p {
+    margin-top: 2rem;
+}
+
+.habilidades {
+    margin-bottom: 3rem;
+}
+
+.skill {
+    width: 70%;
+    margin: 0.5rem auto;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.skill span {
+    width: 8rem;
+    text-align: right;
+    margin-right: 1rem;
+}
+
+.skill>div {
+    width: 100%;
+    height: 1.5rem;
+    border: solid 2px #00ffec;
+    border-radius: 5px;
+}
+
+.skill div>div {
+    height: 100%;
+    background-color: #00ffec;
+}
+
+.skill div>.skill30 {
+    width: 30%;
+}
+
+.skill div>.skill40 {
+    width: 40%;
+}
+
+.skill div>.skill50 {
+    width: 50%;
+}
+
+.skill div>.skill70 {
+    width: 70%;
+}
+
+.skill div>.skill80 {
+    width: 80%;
+}
+
+.formacao-profissional {
+    margin-bottom: 3rem;
+}
+
+.formacao-profissional>div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.formacao-profissional>div>div {
+    width: 40%;
+    height: auto;
+    border: solid 2px #00ffec;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.esperiencia-profissional {
+    margin-bottom: 3rem;
+}
+
+.esperiencia-profissional>div {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+}
+
+.esperiencia-profissional>div>div {
+    width: 45%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio {
+    margin-bottom: 4rem;   
+}
+
+.link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.link>div {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.projetos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.projetos>img {
+    width: 40%;
+    box-shadow: 0px 1px 5px 0px rgb(74 74 74 / 50%);
+}
+
+@media screen and (max-width: 720px)
+{
+    h1 {
+        font-size: 3em;
+    }
+
+    .sobre-mim div {
+        flex-direction: column;
+    }
+
+    .sobre-mim div>div {
+        width: 100%;
+        margin: 1rem 0 0 0;
+    }
+
+    .skill {
+        width: 100%;
+    }
+
+    .skill span {
+        width: 7rem;
+    }
+
+    .formacao-profissional>div {
+        flex-direction: column;
+    }
+
+    .formacao-profissional>div>div {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .formacao-profissional>div>div:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .esperiencia-profissional>div {
+        flex-direction: column;
+    }
+    
+    .esperiencia-profissional>div>div {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .projetos {
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+
+    .projetos>img {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    .projetos>img:last-of-type {
+        margin-bottom: 0;
+    }
+}
